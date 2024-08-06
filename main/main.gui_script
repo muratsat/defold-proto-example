@@ -5,7 +5,13 @@ function init(self)
 	--proto.set_logger(log.get_logger("proto"))
 
 	-- Load the proto schema from file or pass a table directly
-	proto.init("/resources/proto.json")
+	-- proto.init("/resources/proto.json")
+
+	proto.init({
+		["/resources/proto"] = {
+			"game.proto"
+		}
+	})
 
 	local data = proto.get("game.data")
 	pprint("proto.get", data)
