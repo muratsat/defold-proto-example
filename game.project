@@ -1,6 +1,7 @@
 [project]
 title = Mobile game
 dependencies#0 = https://github.com/Insality/defold-proto/archive/refs/tags/1.zip
+custom_resources = /resources
 
 [bootstrap]
 main_collection = /main/main.collectionc
