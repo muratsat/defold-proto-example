@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package game;
+
+message data {
+	string id = 1;
+	uint32 number = 2;
+	bool flag = 3;
+	nested_data nested = 4;
+}
+
+message nested_data {
+	string id = 1;
+	uint32 number = 2;
+}
